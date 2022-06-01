@@ -8,7 +8,7 @@ See `/payloads` for some example payloads
 
 Information about testing environment
 
-```
+```shell
 spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ node -v
 v14.19.2
 spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ npm -v
@@ -17,7 +17,7 @@ spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ npm -v
 
 Install the contents of package.json and use serverless and other deps at a specific version
 
-```
+```shell
 spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ npm install
 npm WARN serverless_wsgi_django@1.0.0 No description
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
@@ -33,7 +33,7 @@ audited 416 packages in 2.742s
 
 Install updated package tooling
 
-```
+```shell
 spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ python3.8 -m venv .venv
 spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ source .venv/bin/activate
 (.venv) spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ pip install --upgrade pip setuptools wheel pip-tools
@@ -43,7 +43,7 @@ Successfully installed click-8.1.3 pep517-0.12.0 pip-22.1.2 pip-tools-6.6.2 setu
 
 Install requirements/requirements-dev
 
-```
+```shell
 (.venv) spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ pip install -r ./requirements.txt -r ./requirements-dev.txt
 ...
 Installing collected packages: mypy-extensions, mccabe, werkzeug, urllib3, typing-extensions, sqlparse, six, pyflakes, pycodestyle, platformdirs, pathspec, jmespath, django-types, backports.zoneinfo, asgiref, python-dateutil, mypy-boto3-sqs, mypy-boto3-s3, mypy-boto3-rds, mypy-boto3-lambda, mypy-boto3-ec2, mypy-boto3-dynamodb, mypy-boto3-cloudformation, mypy, flake8, django, botocore-stubs, black, botocore, boto3-stubs, s3transfer, boto3
@@ -52,7 +52,7 @@ Successfully installed asgiref-3.5.2 backports.zoneinfo-0.2.1 black-22.3.0 boto3
 
 Use `npm run serverless` to do a local test
 
-```
+```shell
 (.venv) spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ npm run serverless -- invoke local --function api --path payloads/helloworld.request.json
 
 > serverless_wsgi_django@1.0.0 serverless /home/spencersr/src/serverless/serverless-wsgi-django-demo
@@ -75,7 +75,7 @@ Use `npm run serverless` to do a local test
 
 Now with docker
 
-```
+```shell
 (.venv) spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ npm run serverless -- invoke local --function api --path payloads/helloworld.request.json --docker
 
 > serverless_wsgi_django@1.0.0 serverless /home/spencersr/src/serverless/serverless-wsgi-django-demo
@@ -94,7 +94,7 @@ REPORT RequestId: 3acf7c9b-baf9-1e00-07ca-0f1962bdff67  Init Duration: 1007.15 m
 
 Use `npm run serverless` to optionally deploy
 
-```
+```shell
 (.venv) spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ npm run serverless -- deploy --stage test
 
 > serverless_wsgi_django@1.0.0 serverless /home/spencersr/src/serverless/serverless-wsgi-django-demo
@@ -112,7 +112,7 @@ functions:
   api: serverless-wsgi-demo-test-api (21 MB)
 ```
 
-```
+```shell
 (.venv) spencersr@gtd:~/src/serverless/serverless-wsgi-django-demo$ curl https://shwx61emn9.execute-api.us-east-1.amazonaws.com
 Hello, World!
 ```
