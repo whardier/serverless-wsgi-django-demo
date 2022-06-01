@@ -1,0 +1,7 @@
+black
+flake8
+mypy
+boto3-stubs[essential]
+django-types
+
+

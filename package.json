@@ -1,0 +1,26 @@
+{
+  "name": "serverless_wsgi_django",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serverless": "serverless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gist.github.com/f9f54e8fe1bb51d5a716e345203c5677.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gist.github.com/f9f54e8fe1bb51d5a716e345203c5677"
+  },
+  "homepage": "https://gist.github.com/f9f54e8fe1bb51d5a716e345203c5677",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^3.18.2",
+    "serverless-python-requirements": "^5.4.0",
+    "serverless-wsgi": "^3.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "routeKey": "$default",
+  "rawPath": "/",
+  "rawQueryString": "",
+  "headers": {
+    "accept": "*/*",
+    "content-length": "0",
+    "host": "localhost",
+    "user-agent": "curl/7.68.0",
+    "x-amzn-trace-id": "Root=1-6296aad5-325800a73e96c64758428e99",
+    "x-forwarded-for": "206.174.34.16",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https"
+  },
+  "requestContext": {
+    "accountId": "377024778620",
+    "apiId": "shwx61emn9",
+    "domainName": "localhost",
+    "domainPrefix": "shwx61emn9",
+    "http": {
+      "method": "GET",
+      "path": "/",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "206.174.34.16",
+      "userAgent": "curl/7.68.0"
+    },
+    "requestId": "TA-hZjmRoAMEP1w=",
+    "routeKey": "$default",
+    "stage": "$default",
+    "time": "31/May/2022:23:55:01 +0000",
+    "timeEpoch": 1654041301578
+  },
+  "isBase64Encoded": false
+}
